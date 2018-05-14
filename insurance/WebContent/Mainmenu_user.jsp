@@ -7,6 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div id="top" style="height:100px"><% 
+session=request.getSession(false);
 
+String n=(String)session.getAttribute("Uname");
+out.print("<h2>welcome"+n+"</h2>");
+%>
+</div>
+<div id="middle"style="height:200px;border:solid">
+<center><h1>welcome to insurance company</h1>
+<a href="AutoPremium.jsp">
+<h4>compute auto insurance premium</h4>
+</a>
+</center>
+<div id="bottom"></div>
 </body>
 </html>

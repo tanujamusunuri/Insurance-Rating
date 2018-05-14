@@ -12,7 +12,7 @@
  <div id="middle"style="height:200px;border:solid">
 
 <center>
-<h1>welcome to insurance rating systemmm</h1>
+<h1>welcome to insurance rating system</h1>
 <a href="Login.jsp"><h4>click here to login</h4></a>
 </center>
 
