@@ -16,7 +16,7 @@ out.print("<h2>welcome"+n+"</h2>");
 </div>
 <div id="middle"style="height:200px;border:solid">
 <center><h1>welcome to insurance company</h1>
-<a href="AutoPremium.jsp">
+<a href="http://localhost:9009/insurance/CalcAuto">
 <h4>compute auto insurance premium</h4>
 </a>
 </center>
