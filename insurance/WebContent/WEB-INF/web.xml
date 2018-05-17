@@ -39,4 +39,14 @@
     <servlet-name>CalcAuto</servlet-name>
     <url-pattern>/CalcAuto</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PremiumCal</display-name>
+    <servlet-name>PremiumCal</servlet-name>
+    <servlet-class>com.ts.PremiumCal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PremiumCal</servlet-name>
+    <url-pattern>/PremiumCal</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -1,10 +1,6 @@
 
-
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-
-    pageEncoding="ISO-8859-1"%>
-    
+pageEncoding="ISO-8859-1"%>
     <%@ page import="java.util.ArrayList"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -13,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form action="PremiumCal" method="post">
 <div id="top" style="height:100px"></div>
 <div id="middle"style="height:200px;border:solid">
 <h1>calculate auto insurance premium</h1>
@@ -35,6 +32,6 @@ out.print("</select>");
 <div id="bottom">
 
 </div>
-</div>
+</div></form>
 </body>
 </html>

@@ -34,7 +34,7 @@
 <input type="button" value="Cancel">&emsp;
 
 </center>
-</div>
-</form>
+</div></form>
+
 </body>
 </html>
