@@ -1,22 +1,23 @@
 package com.ts;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class PremiumCal
+ * Servlet implementation class FinalPrice
  */
-public class PremiumCal extends HttpServlet {
+public class FinalPrice extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PremiumCal() {
+    public FinalPrice() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,15 +35,16 @@ public class PremiumCal extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String model=request.getParameter("category");
-		int base=new InsuranceDAO().basePremium(model);
-		String[] a= {model,String.valueOf(base)};
-		HttpSession session=request.getSession();  
-        session.setAttribute("premium",a);
-        response.sendRedirect("Premium_Cal.jsp");
-		
-	
-		doGet(request, response);
+		String vtype=request.getParameter("vehicle");
+		String Einsurance=request.getParameter("Earlier Insurance");
+		String Dclass=request.getParameter("Driver Class");
+		String ASF=request.getParameter("Adv Security");
+		String ATA=request.getParameter("Anti Theft");
+		String VH=request.getParameter("Violation");
+		String PT=request.getParameter("Policy Term");
+		double finalprice=new InsuranceDAO().FinalPrice(vtype, Einsurance, Dclass, ASF, ATA, VH, PT);
+		PrintWriter p=response.getWriter();
+		p.write("<h3> Total amount payable is :"+String.valueOf(finalprice)+"</h3>");
 	}
 
 }

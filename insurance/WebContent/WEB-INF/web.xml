@@ -49,4 +49,24 @@
     <servlet-name>PremiumCal</servlet-name>
     <url-pattern>/PremiumCal</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CalcHome</display-name>
+    <servlet-name>CalcHome</servlet-name>
+    <servlet-class>com.ts.CalcHome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalcHome</servlet-name>
+    <url-pattern>/CalcHome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FinalPrice</display-name>
+    <servlet-name>FinalPrice</servlet-name>
+    <servlet-class>com.ts.FinalPrice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FinalPrice</servlet-name>
+    <url-pattern>/FinalPrice</url-pattern>
+  </servlet-mapping>
 </web-app>

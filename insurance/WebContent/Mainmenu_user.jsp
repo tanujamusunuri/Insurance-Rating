@@ -20,6 +20,6 @@ out.print("<h2>welcome"+n+"</h2>");
 <h4>compute auto insurance premium</h4>
 </a>
 </center>
-<div id="bottom"></div>
+
 </body>
 </html>
